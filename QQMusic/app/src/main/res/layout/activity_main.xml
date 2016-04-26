@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qqimage"
+    android:orientation="vertical"
+    tools:context="com.example.fero010.qqmusic.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0010201"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/qqsmall"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/musicWordDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:text="04-26 14:54:32.994 21342-21342/com.example.fero010.qqmusic V/InputMethodManager: START INPUT: com.android.internal.policy.impl.PhoneWindow$DecorView{42a1d638 V.E..... R....... 0,0-720,1280} ic=null tba=android.view"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/musicViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#80010101"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="5dp">
+
+
+        <TextView
+            android:id="@+id/iconWord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffb4b6b5"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/iconImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffb4b6b5"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/iconTemplate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffb4b6b5"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/iconTwoCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffb4b6b5"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
